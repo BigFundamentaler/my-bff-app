@@ -8,6 +8,8 @@ module.exports = {
       exec_mode: 'cluster',
       interpreter: './node_modules/.bin/ts-node', // 使用本地 ts-node
       autorestart: true,
+      max_restarts: 3, // 限制重启次数
+      min_uptime: '10s', // 最小运行时间
       watch: false,
       env: {
         NODE_ENV: 'development',
