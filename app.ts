@@ -42,5 +42,6 @@ app.use(historyApiFallback({ index: '/', whiteList: ['/api'] }));
 //让所有的路由全部生效
 app.use(loadControllers(`${__dirname}/routers/*.ts`));
 app.listen(port, () => {
-  console.log('京程一灯Server BFF启动成功');
+  console.log('BFF启动成功');
+  console.log('network:',`127.0.0.1:${port}`)
 });
