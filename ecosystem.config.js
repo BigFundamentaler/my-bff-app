@@ -8,7 +8,7 @@ module.exports = {
       exec_mode: 'cluster',
       interpreter: './node_modules/.bin/ts-node', // 使用本地 ts-node
       autorestart: true,
-      watch: fale,
+      watch: false,
       env: {
         NODE_ENV: 'development',
         TS_NODE_PROJECT: './tsconfig.json',
